@@ -1,13 +1,18 @@
 const express = require('express')
 const morgan = require('morgan')
-const bodyParser = require('body-parser')
+const bodyparser = require('body-parser')
 const cors = require('cors')
+
+const app = express();
 
 // Config .env to ./config/config.env
 require('dotenv').config({
     path: './config/config.env'
-})
-const app = express()
+});
+
+//Use bodyParser
+app.use(bodyparser.json())
+
 
 // Config for only development
 if(process.env.NODE_ENV === 'development'){
@@ -23,7 +28,8 @@ if(process.env.NODE_ENV === 'development'){
 
 //Load all routes
 
-const authRouter = require('./routes/auth.route')
+const authRouter = require('./routes/auth.route');
+const { response } = require('express');
 
 //Use Routes
 app.use('/api/', authRouter);

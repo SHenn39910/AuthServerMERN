@@ -17,6 +17,7 @@
     "dotenv": "^8.2.0",
     "epxress": "0.0.1-security",
     "express": "^4.17.1",
+    "mongoose": "^5.10.7",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.4"
   }
