@@ -68,3 +68,5 @@ userSchema.methods = {
         return this.encryptPassword(plainPassword) === this.hashed_password
     }
 }
+
+module.exports = mongoose.model('User', userSchema)

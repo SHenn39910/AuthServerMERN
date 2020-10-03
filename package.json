@@ -1,5 +1,5 @@
 {
-  "name": "Server",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,14 +13,8 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "cars": "^1.1.6",
-    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "epxress": "0.0.1-security",
-    "express": "^4.17.1",
-    "express-jwt": "^6.0.0",
-    "loadash": "^1.0.0",
-    "mongoose": "^5.10.7",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.4"
+    "morgan": "^1.10.0"
   }
 }
