@@ -5,9 +5,12 @@ const { OAuth2Client } = require('google-auth-library')
 const fetch = require('node-fetch')
 const { validationResult } = require('express-validator')
 const jwt = require('jsonwebtoken')
+//Custom error handler to get useful error from database errors
 const {errorHandler} = require('../helpers/dbErrorHandling')
+// I will use for send email sendgrid you can use nodemaile also
+const sgMail = require('@sendgrid/mail')
 
 exports.registerController = (req, res) => {
    const {name, email, password} = req.body
-   console.log(name, email, password)
+   const errors = validationResult(req)
 }
