@@ -1,3 +1,6 @@
 #Dont track node mod
 /node_modules
 /C:\Users\shenn\OneDrive\Desktop\workspace\Server\node_modules
+
+/node_modules/
+
